@@ -1,4 +1,10 @@
-import { createApp } from 'vue'
+import * as Vue from 'vue'
+import ProgressBar from './components/ProgressBar.vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+const app = Vue.createApp(App);
+
+app.component('ProgressBar', ProgressBar);
+
+
+app.mount("#app");
